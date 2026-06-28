@@ -1,0 +1,40 @@
+# ===== 只上传 pcb / k230 / qt / Software，其余文件夹忽略 =====
+/_ref_spi_touch/
+/_tmp_spi_touch/
+/tupian/
+/提交/
+/文档/
+*.docx
+
+# ===== Qt 编译产物 =====
+build/
+*/build/
+**/build/
+
+# ===== Keil / MDK-ARM 编译产物 =====
+Software/Software/MDK-ARM/F407_Smart_Home_Project/
+*.uvguix.*
+*.uvoptx
+*.lst
+*.o
+*.obj
+*.axf
+*.elf
+*.crf
+*.d
+*.dep
+*.map
+*.bak
+*.scr
+*.iex
+*.htm
+JLinkLog.txt
+JLinkSettings.ini
+DebugConfig/
+*.log
+
+# ===== 系统/编辑器临时文件 =====
+.DS_Store
+Thumbs.db
+*.user
+.vscode/

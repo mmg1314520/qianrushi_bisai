@@ -1,0 +1,51 @@
+#ifndef RT_CONFIG_H__
+#define RT_CONFIG_H__
+
+#define RT_USING_NANO
+#define __RT_KERNEL_SOURCE__
+#define __RT_IPC_SOURCE__
+
+#define SOC_STM32F407ZG
+
+#define RT_NAME_MAX                 12
+#define RT_CPUS_NR                  1
+#define RT_ALIGN_SIZE               8
+#define RT_THREAD_PRIORITY_32
+#define RT_THREAD_PRIORITY_MAX      32
+#define RT_TICK_PER_SECOND          1000
+#define IDLE_THREAD_STACK_SIZE      512
+
+#define RT_USING_OVERFLOW_CHECK
+#define RT_USING_HOOK
+#define RT_HOOK_USING_FUNC_PTR
+#define RT_USING_IDLE_HOOK
+#define RT_IDLE_HOOK_LIST_SIZE      4
+
+#define RT_USING_SEMAPHORE
+#define RT_USING_MUTEX
+#define RT_USING_EVENT
+#define RT_USING_MAILBOX
+#define RT_USING_MESSAGEQUEUE
+
+#define RT_USING_SMALL_MEM
+#define RT_USING_SMALL_MEM_AS_HEAP
+#define RT_USING_HEAP
+
+#define RT_USING_CONSOLE
+#define RT_CONSOLEBUF_SIZE          256
+#define RT_USING_DEBUG
+#define RT_DEBUGING_ASSERT
+#define RT_BACKTRACE_LEVEL_MAX_NR   16
+#define RT_KSERVICE_USING_TINY_SIZE
+#define RT_KLIBC_USING_LIBC_VSSCANF
+
+#define RT_USING_CPU_FFS
+#define ARCH_ARM
+#define ARCH_ARM_CORTEX_M
+#define ARCH_ARM_CORTEX_M4
+
+#define RT_USING_USER_MAIN
+#define RT_MAIN_THREAD_STACK_SIZE   4096
+#define RT_MAIN_THREAD_PRIORITY     10
+
+#endif
